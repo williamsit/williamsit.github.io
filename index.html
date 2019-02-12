@@ -9,8 +9,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="https://williamsit.github.io/index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -31,10 +31,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">Data</a>
+              <a class="nav-link" href="#" target="_self">Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">About me</a>
+              <a class="nav-link" href="#" target="_self">About Me</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -46,7 +46,30 @@
   </head>
 
   <body>
+    <br>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel-body">
+              <div class="jumbotron">
+                  <h1 class="display-3">Weather Py Project</h1>
+                  <hr class="my-4">
+                  <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
+                    cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
+                    Latitude and Longitude. </p>
+                  <hr class="my-4">
+
+                  <p class="lead">
+                    You can click on the button below to head to the summary page.
+                    <br>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Summary</a>
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
 
