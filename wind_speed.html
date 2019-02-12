@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/darkly/bootstrap.min.css" integrity="sha384-F7cPHYSdE3FzBKvdxDKyFow9Y28Yq7KGHQOKpOI+rwc8s6jJnp///mpEJAib2EM6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Index</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" target="_self">Maximum Temperature</a>
+                    <a class="dropdown-item" href="#" target="_self">Wind Speed</a>
+                    <a class="dropdown-item" href="#" target="_self">Humidity</a>
+                    <a class="dropdown-item" href="#" target="_self">Cloudiness</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_self">Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_self">Conclusion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_self">About Me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+</head>
+<body>
+    <br>
+        <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="panel-body">
+                        <div class="jumbotron">
+                            <h1 class="display-5">Wind Speed vs Latitude</h1>
+                            <hr class="my-4">
+                            <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
+                              cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
+                              Latitude and Longitude.  </p>
+                            <hr class="my-4">
+                            <p>
+                                <img src="Resources/Plots/Wind_Speed_vs_Latitude_html.png" height="450" width="650" class="mx-auto d-block">
+                            </p>
+                            <p class="my-4">
+                              For the full conclusion, you can click on the button below to head to the summary page.
+                              <br>
+                              <br>
+                              <a class="btn btn-primary btn-lg" href="#" role="button">Conclusion</a>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+</body>
+</html>
