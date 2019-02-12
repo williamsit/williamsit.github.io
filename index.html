@@ -9,7 +9,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="index.html">WeatherPy</a>
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,30 +17,29 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Index</a>
+              <a class="nav-link" href="list_of_factors.html">List of Factors</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#" target="_self">Maximum Temperature</a>
-                <a class="dropdown-item" href="#" target="_self">Wind Speed</a>
-                <a class="dropdown-item" href="#" target="_self">Humidity</a>
-                <a class="dropdown-item" href="#" target="_self">Cloudiness</a>
-              </div>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temp.html" target="_self">Maximum Temperature</a>
+              <a class="dropdown-item" href="wind_speed.html" target="_self">Wind Speed</a>
+              <a class="dropdown-item" href="humidity.html" target="_self">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html" target="_self">Cloudiness</a>
+            </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="_self">Data</a>
+              <a class="nav-link" href="data.html" target="_self">Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="_self">About Me</a>
+              <a class="nav-link" href="conclusion.html" target="_self">Conclusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_self">About Me</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
   </head>
@@ -52,124 +51,33 @@
       <div class="row">
         <div class="col-md-12">
           <div class="panel-body">
-              <div class="jumbotron">
-                  <h1 class="display-3">Weather Py Project</h1>
-                  <hr class="my-4">
-                  <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                    cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                    Latitude and Longitude.  </p>
-                  <hr class="my-4">
+            <div class="jumbotron">
+              <h1 class="display-3">Weather Py Project</h1>
+              <hr class="my-4">
+                <p> <strong>Introduction:</strong> In this project, I wanted to see if there were any factors that affect a given city's weather forecast. I decided to divide my analysis 
+                on four specific factors:
+                  <ul>
+                    <li><a href="max_temp.html">Maximum Temperature</a></li>
+                    <li><a href="wind_speed.html">Wind Speed</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                  </ul>
+                I gathered weather data from over 600 different cities. First, I used <a href="https://www.python.org/">Python</a> (Pandas and Matplotlib) and <a href="https://openweathermap.org/api">Open Weather API</a> in order to grab the proper data on 
+                cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
+                Latitude. </p>
+              <hr class="my-4">
 
-                  <p class="my-4">
-                    To learn more, you can click on the button below to head to the summary page.
-                    <br>
-                    <br>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Conclusion</a>
-                  </p>
+                <p class="my-4">
+                To learn more about each factor, you can click on the button below which will lead you to the <a href="list_of_factors.html">list of factors</a> page.
+                  <br>
+                  <br>
+                <a class="btn btn-primary btn-lg" href="list_of_factors.html" role="button">List of Factors</a>
+                </p>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <br>
-
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel-body">
-                <div class="jumbotron">
-                    <h3 class="display-5">Maximum Temperature vs Latitude</h3>
-                    <hr class="my-4">
-                    <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                      cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                      Latitude and Longitude.  </p>
-                    <hr class="my-4">
-  
-                    <p class="my-4">
-                      To learn more, you can click on the button below.
-                      <br>
-                      <br>
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Max Temp vs Latitude</a></p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel-body">
-                <div class="jumbotron">
-                    <h3 class="display-5">Wind Speed vs Latitude</h3>
-                    <hr class="my-4">
-                    <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                      cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                      Latitude and Longitude.  </p>
-                    <hr class="my-4">
-  
-                    <p class="my-4">
-                      To learn more, you can click on the button below.
-                      <br>
-                      <br>
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Wind Speed vs Latitude</a></p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel-body">
-                <div class="jumbotron">
-                    <h3 class="display-5">Humidity vs Latitude</h3>
-                    <hr class="my-4">
-                    <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                      cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                      Latitude and Longitude.  </p>
-                    <hr class="my-4">
-  
-                    <p class="my-4">
-                      To learn more, you can click on the button below.
-                      <br>
-                      <br>
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Humidity vs Latitude</a></p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel-body">
-                <div class="jumbotron">
-                    <h3 class="display-5">Cloudiness vs Latitude</h3>
-                    <hr class="my-4">
-                    <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                      cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                      Latitude and Longitude.  </p>
-                    <hr class="my-4">
-  
-                    <p class="my-4">
-                      To learn more, you can click on the button below.
-                      <br>
-                      <br>
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Cloudiness vs Latitude</a></p>
-                </div>
-            </div>
-          </div>
-        </div>
     </div>
 
 
