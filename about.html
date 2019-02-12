@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/darkly/bootstrap.min.css" integrity="sha384-F7cPHYSdE3FzBKvdxDKyFow9Y28Yq7KGHQOKpOI+rwc8s6jJnp///mpEJAib2EM6" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -9,78 +9,97 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Index</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Plots
-                    </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#" target="_self">Maximum Temperature</a>
-                    <a class="dropdown-item" href="#" target="_self">Wind Speed</a>
-                    <a class="dropdown-item" href="#" target="_self">Humidity</a>
-                    <a class="dropdown-item" href="#" target="_self">Cloudiness</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" target="_self">Data</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" target="_self">Conclusion</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" target="_self">About Me</a>
-                </li>
-              </ul>
+        <a class="navbar-brand" href="index.html">WeatherPy</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="list_of_factors.html">List of Factors</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temp.html" target="_self">Maximum Temperature</a>
+              <a class="dropdown-item" href="wind_speed.html" target="_self">Wind Speed</a>
+              <a class="dropdown-item" href="humidity.html" target="_self">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html" target="_self">Cloudiness</a>
             </div>
-          </nav>
-</head>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html" target="_self">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="conclusion.html" target="_self">Conclusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_self">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
 <body>
-    <br>
-        <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <h1 class="display-5">Cloudiness vs Latitude</h1>
-                            <hr class="my-4">
-                            <p> <strong>Summary:</strong> In this project, I gathered weather data from over 600 different cities. First, I used Python (Pandas and Matplotlib) and OpenWeather API in order to grab the proper data on 
-                              cities that were randomly generated. Then, I created a series of scatter plots in order to showcase the relationship between different factors (such as Wind Speed and Percentage of Cloudiness) against the cities'
-                              Latitude and Longitude.  </p>
-                            <hr class="my-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <h3 class="text-center">Max Temperature</h3>
-                                        <a href="#"><img src="Resources/Plots/Max_Temp_vs_Latitude_html.png" height="450" width="650" class="mx-auto d-block"></a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <h3 class="text-center">Max Temperature</h3>
-                                        <a href="#"><img src="Resources/Plots/Max_Temp_vs_Latitude_html.png" height="450" width="650" class="mx-auto d-block"></a>
-                                    </div>
-                                </div>
-
-
-
-
-
-                            <p class="my-4">
-                              For the full conclusion, you can click on the button below to head to the summary page.
-                              <br>
-                              <br>
-                              <a class="btn btn-primary btn-lg" href="#" role="button">Conclusion</a>
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-body">
+        <div class="jumbotron">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">“The goal is to turn data into information, and information into insight.” </p>
+            <footer class="blockquote-footer">Carly Fiorina <cite title="Source Title">former executive, president, and chair of Hewlett-Packard Co.</cite></footer>
+          </blockquote>
+          <p>
+            Hey there! <br> My name is William Sit, and I am a <strong>data scientist</strong> who wants to work closely with data - not only understanding it, but <i>embracing</i> it - and to make a story
+            out it. <br>I want to <strong>change the world</strong>, with one idea at a time.
+          </p>
+          <p>
+            I'm currently enrolled at Rutgers' Data Science Bootcamp. This website is one of the homework assignments that we, as students, were required to create.
+            If there is anything that I can improve upon, please let me know!
+          </p>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">See what i'm up to on Github!</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Github</h6>
+          <p class="card-text">I'm always eager to ask questions and to challenge my own understanding. You can find what i'm currently preoccupying myself with on my github page.</p>
+          <a href="https://github.com/williamsit" target="_blank" class="card-link"> >>My Github<< </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Follow me on Twitter!</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Twitter</h6>
+          <p class="card-text">I'm always trying to promote any projects I work on through social media, with Twitter being one of them. Feel free to give me a follow!</p>
+          <a href="https://twitter.com/will_sit" target="_blank" class="card-link"> >>My Twitter<< </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Check me out on Instagram!</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Instagram</h6>
+          <p class="card-text">Sometimes I like to chill and relax. I'm a big fan of hiking and will, more often than not, post my pictures on Instagram. Hit me up with a follow!</p>
+          <a href="https://www.instagram.com/willy_sit/" class="card-link"> >>My Instagram<< </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+          
+          
 </body>
 </html>
